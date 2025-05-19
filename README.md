@@ -65,3 +65,8 @@ npm install
 
 # Set up environment variables in a `.env` file
 touch .env
+
+
+Name: Jubayer Hossain
+
+I have done this project alone. 
