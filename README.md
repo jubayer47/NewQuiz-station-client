@@ -1,12 +1,67 @@
-# React + Vite
+# 🎯 Quiz Master - Full Stack Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack quiz application that allows users to sign up, take timed quizzes, view their results, track play history, and compete on a global leaderboard. Built using React for the frontend, Express.js for the backend, and MongoDB for persistent storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+- **Frontend**: [https://quiz-station-client.vercel.app](https://quiz-station-client.vercel.app)
+- **Backend API**: [https://quiz-station-server-ten.vercel.app](https://quiz-station-server-ten.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Features
+
+### ✅ General
+
+- Responsive UI with TailwindCSS
+- Uses Trivia API to fetch real-time questions
+- Seamless navigation using React Router
+- Clean and modular codebase
+
+### 🧩 Frontend (React + TailwindCSS)
+
+- Home page with quiz start option
+- Quiz page with dynamic 10-question game
+- Results page showing detailed analysis
+- Signup & login functionality with JWT
+- User profile page showing play history
+- Leaderboard with top 10 users
+- Session storage & local storage integration
+
+### 🛠️ Backend (Node.js + Express + MongoDB)
+
+- REST API using Express
+- CORS configured for Vercel
+- Auth routes: `/signup`, `/login` using JWT
+- Quiz session routes: `/quiz/start`, `/quiz/submit`, `/quiz/results/:sessionId`
+- MongoDB integration for:
+  - User data
+  - Quiz history
+  - Leaderboard
+- Modular code with middleware for JWT authentication
+
+---
+
+## 📦 Installation
+
+### 🔧 Prerequisites
+
+- Node.js
+- npm or yarn
+- MongoDB Atlas
+
+---
+
+## ⚙️ Backend Setup
+
+```bash
+# Navigate to backend folder
+cd backend
+
+# Install dependencies
+npm install
+
+# Set up environment variables in a `.env` file
+touch .env
